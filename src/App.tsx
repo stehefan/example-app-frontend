@@ -9,7 +9,7 @@ const App = () => {
     const [expandedProject, setExpandedProject] = useState<ProjectEntity | null>(null)
 
     useEffect(() => {
-        fetch('http://localhost:8080/project')
+        fetch('http://localhost:8080/api/project')
             .then(res => res.json())
             .then(result => {
                     setProjects(result)
